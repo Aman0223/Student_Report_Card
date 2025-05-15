@@ -1,0 +1,40 @@
+.academic-table {
+    margin-bottom: $spacing-md;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th, td {
+            border: 1px solid $border-color;
+            padding: 5px 8px; // Tighter padding as in mockup
+            text-align: left;
+            font-size: 12px;
+        }
+
+        th {
+            background: $primary-color;
+            color: white;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: $highlight-color; // Light blue highlight as in mockup
+        }
+
+        .fail {
+            color: $fail-color;
+        }
+    }
+}
+
+.overall-summary {
+    p {
+        margin: 2px 0;
+        font-size: 12px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+}

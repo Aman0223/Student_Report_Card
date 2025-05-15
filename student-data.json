@@ -1,0 +1,39 @@
+[
+    {
+        "studentInfo": {
+            "name": "Alice Wonderland",
+            "photo": "https://via.placeholder.com/100",
+            "rollNo": "2823-AG1",
+            "class": "Grade 5 - Section B",
+            "dob": "2010-03-15"
+        },
+        "term1Report": {
+            "subjects": [
+                { "name": "Mathematics", "marks": 32, "grade": "D", "teacherRemarks": "Needs improvement" },
+                { "name": "Science", "marks": 76, "grade": "B", "teacherRemarks": "Good progress" },
+                { "name": "English", "marks": 88, "grade": "A", "teacherRemarks": "Excellent work" },
+                { "name": "History", "marks": 62, "grade": "C", "teacherRemarks": "Can do better" },
+                { "name": "Art", "marks": 91, "grade": "A", "teacherRemarks": "Outstanding" }
+            ],
+            "overallSummary": {
+                "average": 69,
+                "grade": "B",
+                "attendance": "95%"
+            }
+        },
+        "term2Report": {
+            "subjects": [
+                { "name": "Mathematics", "marks": 90, "grade": "A", "teacherRemarks": "Continuous excellence" },
+                { "name": "Science", "marks": 82, "grade": "A-", "teacherRemarks": "Very good" },
+                { "name": "English", "marks": 95, "grade": "A+", "teacherRemarks": "Outstanding" },
+                { "name": "Social Studies", "marks": 45, "grade": "B", "teacherRemarks": "Improved significantly" },
+                { "name": "Art", "marks": 76, "grade": "B", "teacherRemarks": "Good engagement" }
+            ],
+            "overallSummary": {
+                "average": 76.4,
+                "grade": "B+",
+                "attendance": "92%"
+            }
+        }
+    }
+]

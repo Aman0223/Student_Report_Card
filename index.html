@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="report-card">
+        <!-- Header -->
+        <header class="student-info">
+            <img src="https://via.placeholder.com/100" alt="Student Photo" class="student-photo">
+            <div class="student-details">
+                <h1 class="student-name"></h1>
+                <p>Roll No: <span class="roll-no"></span></p>
+                <p>Class: <span class="class-section"></span></p>
+                <p>DOB: <span class="dob"></span></p>
+            </div>
+            <button class="export-btn no-print">Export as PDF</button>
+        </header>
+
+        <!-- Term Tabs -->
+        <div class="term-tabs no-print">
+            <button class="tab active" data-term="term1">Term 1</button>
+            <button class="tab" data-term="term2">Term 2</button>
+        </div>
+
+        <!-- Academic Table -->
+        <section class="academic-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                        <th>Teacher Remarks</th>
+                    </tr>
+                </thead>
+                <tbody class="academic-data"></tbody>
+            </table>
+        </section>
+
+        <!-- Overall Summary -->
+        <section class="overall-summary">
+            <h3>Overall Summary</h3>
+            <p>Average Marks: <span class="average-marks"></span></p>
+            <p>Grade: <span class="final-grade"></span></p>
+            <p>Attendance: <span class="attendance"></span></p>
+        </section>
+
+        <!-- Signature Boxes -->
+        <div class="signatures">
+            <div class="signature-box">
+                <p>Teacher Signature</p>
+            </div>
+            <div class="signature-box">
+                <p>Parent Signature</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="school-name">[School Name]</p>
+            <p>Generated on: <span class="generated-date"></span></p>
+            <div class="watermark">School Watermark</div>
+        </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

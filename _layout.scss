@@ -1,0 +1,132 @@
+.report-card {
+    max-width: 800px; // Slightly narrower to match mockup
+    margin: $spacing-md auto;
+    padding: $spacing-md;
+    background: $background-color;
+    position: relative;
+    border: 1px solid $border-color; // Thin border as in mockup
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    margin-bottom: $spacing-md;
+    position: relative;
+
+    .student-photo {
+        width: 80px; // Smaller photo size as in mockup
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid $border-color;
+    }
+
+    .student-details {
+        flex: 1;
+        p {
+            margin: 2px 0;
+            font-size: 12px; // Smaller text as in mockup
+        }
+    }
+
+    .export-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px 10px;
+        background: $primary-color;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+}
+
+.term-tabs {
+    display: flex;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-md;
+    justify-content: flex-start;
+
+    .tab {
+        padding: 5px 15px;
+        border: none;
+        background: white;
+        color: $primary-color;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 3px;
+
+        &.active {
+            background: $primary-color;
+            color: white;
+        }
+    }
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    margin: $spacing-md 0;
+
+    .signature-box {
+        width: 48%;
+        border: 1px dashed $border-color; // Dashed border as in mockup
+        padding: $spacing-sm;
+        text-align: center;
+        font-size: 12px;
+        color: #666; // Lighter text for placeholders
+    }
+}
+
+.footer {
+    text-align: left;
+    margin-top: $spacing-md;
+    font-size: 12px;
+    color: #666;
+
+    .watermark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.1;
+        font-size: 40px;
+        color: #666;
+    }
+}
+
+// Responsive Design
+@media (max-width: $breakpoint-mobile) {
+    .student-info {
+        flex-direction: column;
+        text-align: center;
+
+        .export-btn {
+            position: static;
+            margin-top: $spacing-sm;
+        }
+    }
+
+    .signatures {
+        flex-direction: column;
+        gap: $spacing-sm;
+
+        .signature-box {
+            width: 100%;
+        }
+    }
+}
+
+// Print Styles
+@media print {
+    .no-print {
+        display: none;
+    }
+
+    .report-card {
+        background: white;
+        border: none;
+    }
+}

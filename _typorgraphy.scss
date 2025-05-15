@@ -1,0 +1,31 @@
+body {
+    font-family: $font-family;
+    font-size: $font-size-base;
+    color: $text-color;
+}
+
+h1 {
+    font-size: 18px; // Smaller heading as in mockup
+    margin: 0;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: $spacing-sm;
+}
+
+@media (max-width: $breakpoint-mobile) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+}
